@@ -1,0 +1,69 @@
+.noti_sec {
+    padding: 1rem 0 0 6rem;
+
+    ul {
+        column-gap: 40px;
+
+        .nav-link {
+            background-color: #fff;
+            color: $primary_color;
+            font-weight: 600;
+            border-radius: 0;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            padding: 0.5em;
+
+            &.active {
+                color: $primary_color;
+                background-color: #fff;
+                border-bottom: 3px solid $primary_color;
+            }
+        }
+    }
+
+    .tab-content {
+        padding-top: 1.5rem;
+
+        form {
+            table {
+                width: 100%;
+                min-width: 500px;
+                margin-bottom: 2rem;
+
+                td {
+                    padding: 1em 0.5em;
+
+                    h5 {
+                        font-size: clamp(0.85rem, 1vw, 1rem);
+                        color: $primary_color;
+                        font-weight: 600;
+                    }
+
+                    h6 {
+                        @extend h5;
+                    }
+
+                    p {
+                        font-size: clamp(0.8rem, 2vw, 1rem);
+                        margin-top: 0.3em;
+                    }
+
+                    .wrapper {
+                        display: flex;
+                        column-gap: 15px;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .noti_sec .tab-content {
+        padding-top: 0rem;
+    }
+
+    .noti_sec {
+        padding: 1rem 0;
+    }
+}

@@ -1,0 +1,54 @@
+.fav_sec {
+    .btn_wrapper {
+        width: 100%;
+        display: flex;
+        column-gap: 15px;
+        justify-content: flex-end;
+
+        a {
+            width: 100%;
+            max-width: 150px;
+
+            &:not(.bg_green) {
+                background-color: $dark_grey;
+            }
+        }
+    }
+
+    .flex_wrapper {
+        @include Flex(row, flex-start, flex-start, 2%, 2rem, wrap);
+        margin-top: 4rem;
+
+        .global_cards {
+            width: calc(92%/4);
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .fav_sec .flex_wrapper .global_cards {
+        width: calc(92%/3);
+    }
+}
+
+@media (max-width:800px) {
+    .fav_sec .flex_wrapper {
+        justify-content: center;
+    }
+
+    .fav_sec .flex_wrapper .global_cards {
+        width: calc(92%/2);
+    }
+}
+
+@media (max-width:992px) {
+    .fav_sec .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:575px) {
+    .fav_sec .flex_wrapper .global_cards {
+        width: 100%;
+    }
+}

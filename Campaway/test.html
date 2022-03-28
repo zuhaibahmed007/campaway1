@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery-1.12.4.min"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<!-- FTP username    ftp://sourceignite.com
+FTP username: u212868988.campaway   
+FTP password: Yaseen2021
+FTP port: 21 -->
+<!-- index done -->
+<!-- contact done -->
+<!-- searching done -->
+<!-- journal done -->
+<!-- category -->
+<!-- camper-one -->
+<!-- camper-two -->
+<!-- faq -->
+<!-- terms of serivice -->
+<!-- privacy policy -->
+<!-- searching -->
+<!-- profile -->
+<!-- camper standards -->
+<!-- covid response -->
+<!-- <style>
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 20px;
+        height: 20px;
+        background-color: none;
+        top: calc(-20% -25%);
+        opacity: .8;
+    }
+    
+    .carousel-control-prev {
+        left: unset !important;
+        right: 40px;
+    }
+    
+    .search_grid_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        padding: 22px 0px;
+        border-top: 1px dashed #AAAEB1;
+    }
+    
+    .search_grid_input_container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px 10px;
+    }
+    
+    .search_grid_container h6 {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #4F5962;
+    }
+    
+    .search_grid_container .search_grid_input_container label {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px 10px;
+        margin-left: 12px;
+        color: #4F5962;
+    }
+    
+    .btn_grid_container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 20px 10px;
+    }
+    
+    .reset_btn {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+        padding-right: 30px;
+        padding-left: 30px;
+        border: 1px solid #4F5962;
+        border-radius: 5px;
+        color: #4F5962;
+    }
+    
+    .filter_btn {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+        width: fit-content;
+        background: #2C615F;
+        border-radius: 5px;
+        color: #FFFFFF;
+    }
+    
+    input[type=checkbox] {
+        /* Double-sized Checkboxes */
+        -ms-transform: scale(1.5);
+        /* IE */
+        -moz-transform: scale(1.5);
+        /* FF */
+        -webkit-transform: scale(1.5);
+        /* Safari and Chrome */
+        -o-transform: scale(1.5);
+        /* Opera */
+        transform: scale(1.5);
+        border: 1px solid #AAAEB1;
+        box-sizing: border-box;
+        border-radius: 3px;
+        margin-left: 12px;
+    }
+    
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: transparent;
+        background-image: url('./assets/images/dropdown-arrow-icon.png');
+        background-repeat: no-repeat;
+        background-position-x: 97%;
+        background-position-y: 50%;
+        border: 1px solid #dfdfdf;
+        border-radius: 2px;
+        margin-right: 4rem;
+        padding: 0px 10px !important;
+    }
+    
+    .form-group {
+        width: 40%;
+        margin-right: 23px;
+    }
+    /* ------------------ */
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 50% !important;
+    }
+    
+    .carousel-control-prev {
+        left: 70px !important;
+    }
+    
+    .carousel-control-next {
+        right: 70px !important;
+    }
+    
+    .carousel-item img {
+        width: 100% !important;
+    }
+</style> -->
+<style>
+    body {
+        background-color: brown;
+    }
+    
+    .grid_region_heading {
+        display: flex;
+    }
+    
+    .carousel_direction_btn_container {
+        margin: 80px 0px 30px 0px !important;
+        text-align: right;
+    }
+    
+    @media (max-width: 790px) {
+        .grid_region_heading {
+            display: block;
+        }
+        .carousel_direction_btn_container {
+            margin-top: 50px !important;
+        }
+    }
+</style>
+
+<body>
+    <!-- MOBILE RESPONSIVE NAVBAR -->
+    <div class="header_mobile_navbar_container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="main_app_navbar_content">
+                        <div class="col-sm-3 col-xs-3">
+                            <nav class="navbar">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                            </nav>
+                        </div>
+                        <div class="col-sm-6 col-xs-6">
+                            <h3>Logo</h3>
+                        </div>
+                        <div class="col-sm-3 col-xs-3">
+                            <nav class="navbar">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo04" aria-controls="navbarTogglerDemo04" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </button>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 .h-300">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo04">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <i class="fa fa-arrow"></i>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <i class="fa fa-arrow"></i>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("button").click(function() {
+            $("p").toggleClass("main");
+        });
+    </script>
+    <!-- <div class="main_app_category_content_container">
+       <div class="container-fluid listing_user_profile_fullWidth_container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="breadcumb_profile_container">
+                            <a href="#">
+                                <i><img src="./assets/images/social-user-prolfile-avator.png"></i>
+                            </a>
+                            <div class="breadcumb_user_content">
+                                <h6>HI, I’M LEA</h6>
+                                <i class="breadcumb_user_icon"><img src="./assets/images/social-location-icon.png" /><span>New Zealand</span></i>
+                            </div>
+                        </div>
+                        <div class="breadcumb_profile_content">
+                            <p>Lea believes that there’s nothing quite like spending a night outdoors, listening to the natural sounds that the night has to offer, a Ruru (morepork) in the distance, and waking up to the tui’s and fantails playing about.
+                                She’s also no stranger to the sleeplessness caused by pierced mattresses, cold feet and cramping necks; it’s no secret that camping in the wild, for all its benefits, can get uncomfortable. In comes Base Camp!</p>
+                        </div>
+                        <div class="breadcumb_profile_detail_container">
+                            <div class="breadcumb_language">
+                                <h6>Languages</h6>
+                                <span>English, French</span>
+                            </div>
+                            <div class="breadcumb_status">
+                                <h6>Profiile Status</h6>
+                                <i class="breadcumb_user_icon"><img src="./assets//images/social-verify-icon.png"><span style="margin-left: 10px;">Verified</span></i>
+                            </div>
+                            <div class="breadcumb_ratings">
+                                <h6>Host rating</h6>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <span style="margin-left: 10px;">Excellent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    <!-- <div class="container">
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                        <div class="breadcumb_nav_tabpanel">
+                            <ul class="nav">
+                                <li><a data-toggle="pill" class="active" href="#siderbar_camper_listing">Listings</a></li>
+                                <li><a data-toggle="pill" href="#Reviews">Reviews </a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div id="siderbar_camper_listing" class="tab-pane in active">
+                                <div class="card">
+                                    <a href="#" class="hover-effect">
+                                        <img class="card-img-top " src="./assets/images/journal-card-poster.png" alt="Card image cap">
+                                        <p class="card_featured_stripe">Featured</p>
+                                    </a>
+                                    <div class="card_bottom_header">
+                                        <div class="card_bottom_header_content">
+                                            <h5><span class="currency">$</span><span class="price">250.00</span><span class="day_count">/Night</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-body category_card_container">
+                                        <h6>Coromandel Tree House *Coming S...</h6>
+                                        <p>Hobsonville Point Road, Hobsonville, Upper Harbour, Auckland, 0618, New Zealand</p>
+                                        <div style="margin-bottom: 8px;">
+                                            <img src="./assets/images/social_bed_icon.png">
+                                            <span>3 Bedrooms</span>
+                                            <img src="./assets/images/social_bath_icon.png" style="margin-left: 10px;">
+                                            <span>1 Baths</span>
+                                        </div>
+                                        <img src="./assets/images/journal-card-user-icon.png">
+                                        <span>6 Campers Cabins, Chalets & Huts</span>
+                                        <div class="card_user_social_content">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./assets/images/social_user_avator.png">
+                                                </a>
+                                                <h6 style="margin-left: 15px;">Hosted by lea</h6>
+                                            </div>
+                                            <a href="#">
+                                                <img src="./assets/images/scoial_dotted_icon.png">
+                                            </a>
+                                        </div>
+                                        <div class="breadcumb_ratings" style="margin-top: marx;">
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <span style="margin-left: 10px;">Excellent</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <a href="#" class="hover-effect">
+                                        <img class="card-img-top " src="./assets/images/journal-card-poster.png" alt="Card image cap">
+                                        <p class="card_featured_stripe">Featured</p>
+                                    </a>
+                                    <div class="card_bottom_header">
+                                        <div class="card_bottom_header_content">
+                                            <h5><span class="currency">$</span><span class="price">250.00</span><span class="day_count">/Night</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-body category_card_container">
+                                        <h6>Coromandel Tree House *Coming S...</h6>
+                                        <p>Hobsonville Point Road, Hobsonville, Upper Harbour, Auckland, 0618, New Zealand</p>
+                                        <div style="margin-bottom: 8px;">
+                                            <img src="./assets/images/social_bed_icon.png">
+                                            <span>3 Bedrooms</span>
+                                            <img src="./assets/images/social_bath_icon.png" style="margin-left: 10px;">
+                                            <span>1 Baths</span>
+                                        </div>
+                                        <img src="./assets/images/journal-card-user-icon.png">
+                                        <span>6 Campers Cabins, Chalets & Huts</span>
+                                        <div class="card_user_social_content">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./assets/images/social_user_avator.png">
+                                                </a>
+                                                <h6 style="margin-left: 15px;">Hosted by lea</h6>
+                                            </div>
+                                            <a href="#">
+                                                <img src="./assets/images/scoial_dotted_icon.png">
+                                            </a>
+                                        </div>
+                                        <div class="breadcumb_ratings" style="margin-top: 9px;">
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <span style="margin-left: 10px;">Excellent</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <a href="#" class="hover-effect">
+                                        <img class="card-img-top " src="./assets/images/journal-card-poster.png" alt="Card image cap">
+                                        <p class="card_featured_stripe">Featured</p>
+                                    </a>
+                                    <div class="card_bottom_header">
+                                        <div class="card_bottom_header_content">
+                                            <h5><span class="currency">$</span><span class="price">250.00</span><span class="day_count">/Night</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-body category_card_container">
+                                        <h6>Coromandel Tree House *Coming S...</h6>
+                                        <p>Hobsonville Point Road, Hobsonville, Upper Harbour, Auckland, 0618, New Zealand</p>
+                                        <div style="margin-bottom: 8px;">
+                                            <img src="./assets/images/social_bed_icon.png">
+                                            <span>3 Bedrooms</span>
+                                            <img src="./assets/images/social_bath_icon.png" style="margin-left: 10px;">
+                                            <span>1 Baths</span>
+                                        </div>
+                                        <img src="./assets/images/journal-card-user-icon.png">
+                                        <span>6 Campers Cabins, Chalets & Huts</span>
+                                        <div class="card_user_social_content">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./assets/images/social_user_avator.png">
+                                                </a>
+                                                <h6 style="margin-left: 15px;">Hosted by lea</h6>
+                                            </div>
+                                            <a href="#">
+                                                <img src="./assets/images/scoial_dotted_icon.png">
+                                            </a>
+                                        </div>
+                                        <div class="breadcumb_ratings" style="margin-top: 9px;">
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <span style="margin-left: 10px;">Excellent</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <a href="#" class="hover-effect">
+                                        <img class="card-img-top " src="./assets/images/journal-card-poster.png" alt="Card image cap">
+                                        <p class="card_featured_stripe">Featured</p>
+                                    </a>
+                                    <div class="card_bottom_header">
+                                        <div class="card_bottom_header_content">
+                                            <h5><span class="currency">$</span><span class="price">250.00</span><span class="day_count">/Night</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-body category_card_container">
+                                        <h6>Coromandel Tree House *Coming S...</h6>
+                                        <p>Hobsonville Point Road, Hobsonville, Upper Harbour, Auckland, 0618, New Zealand</p>
+                                        <div style="margin-bottom: 8px;">
+                                            <img src="./assets/images/social_bed_icon.png">
+                                            <span>3 Bedrooms</span>
+                                            <img src="./assets/images/social_bath_icon.png" style="margin-left: 10px;">
+                                            <span>1 Baths</span>
+                                        </div>
+                                        <img src="./assets/images/journal-card-user-icon.png">
+                                        <span>6 Campers Cabins, Chalets & Huts</span>
+                                        <div class="card_user_social_content">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./assets/images/social_user_avator.png">
+                                                </a>
+                                                <h6 style="margin-left: 15px;">Hosted by lea</h6>
+                                            </div>
+                                            <a href="#">
+                                                <img src="./assets/images/scoial_dotted_icon.png">
+                                            </a>
+                                        </div>
+                                        <div class="breadcumb_ratings" style="margin-top: 9px;">
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <span style="margin-left: 10px;">Excellent</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Reviews" class="tab-pane fade">
+                                <h1>Reviews</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    <!-- <div class="col-md-4">
+                <div class="">
+                    <div class="">
+                        <h6>Compare listings</h6>
+                        <div class="col-md-6" style="display: flex;">
+                            <img src="./assets/images/camper-sde-mg.png" class="img-fluid">
+                            <i><img src="./assets/images/dustbin-icon.png" class="img-fluid"></i>
+                            <img src="./assets/images/camper-sde-mg.png" class="img-fluid">
+                            <i style="right: -155px;"><img src="./assets/images/dustbin-icon.png" class="img-fluid"></i>
+                        </div>
+                        <div class="col-md-6" style="display: flex;">
+                            <img src="./assets/images/camper-sde-mg.png" class="img-fluid">
+                            <i><img src="./assets/images/dustbin-icon.png" class="img-fluid"></i>
+                            <img src="./assets/images/camper-sde-mg.png" class="img-fluid">
+                            <i style="right: -155px;"><img src="./assets/images/dustbin-icon.png" class="img-fluid"></i>
+                        </div>
+                        <button class="btn camper_btn">Compare</button>
+                        <button class="btn close_btn">Close</button>
+                    </div>
+                </div>
+            </div> -->
+    <!-- main_app_sidebar_content_container -->
+    <!-- camper_one_sidebar_content -->
+    <!-- </div> -->
+    </div>
+    <!-- <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 search_grid_container">
+                    <div class="col-md-2">
+                        <h6>Capacity</h6>
+                    </div>
+                    <div class="col-md-9 d-flex flex-wrap">
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                              <option selected>No of Campers</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                              <option selected>Terrain  </option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 search_grid_container">
+                    <div class="col-md-2">
+                        <h6>Price</h6>
+                    </div>
+                    <div class="col-md-9 d-flex flex-wrap">
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                              <option selected>Mn</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                              <option selected>Max</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 search_grid_container">
+                    <div class="col-md-2 col-sm-12">
+                        <h6>Search By</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 search_grid_input_container">
+                        <div>
+                            <input type="checkbox" id="Listing" name="Listing" value="Bike">
+                            <label for="Listing">Listing Type</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Accessibility" name="Accessibility" value="Bike">
+                            <label for="Accessibility">Accessibility</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Activities" name="Activities" value="Bike">
+                            <label for="Activities">Activities</label><br>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 btn_grid_container">
+                        <button class="btn reset_btn">Reset</button>
+                        <button class="btn filter_btn">Apply Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/Single-listing slider/65662796_329252214660496_2054069011255132160_n (1).jpg" alt="Los Angeles" width="1100" height="500">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/Single-listing slider/65662796_329252214660496_2054069011255132160_n.jpg" alt="Chicago" width="1100" height="500">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/Single-listing slider/88DE2D66-7EA4-4DBB-8A6F-856677431FD4_1_201_a.jpeg" alt="New York" width="1100" height="500">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="featured" class="carousel slide home_carousel" data-ride="carousel">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 grid_region_heading">
+                            <div class="col-md-6 col-sm-12">
+                                <h3>Explore All Listings</h3>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="carousel_direction_btn_container">
+                                    <a class="" href="#featured" data-slide="prev">
+                                        <span class="prev_btn">Prev</span>
+                                    </a>
+                                    <a class="" href="#featured" data-slide="next">
+                                        <span class="next_btn">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- <img src="one.jpg"> -->
+    <!-- <div class="col-md-12">
+        <div class="row mt-40">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-40">
+                <div class="card">
+                    <div class="custom_image_grid img_hover_zoom">
+                        <a href="#" class="hover-effect">
+                            <img src="./assets/images/searching-camp-poster.png">
+                            <p class="card_featured_stripe">Featured</p>
+                        </a>
+                        <div class="card_bottom_header">
+                            <div class="card_bottom_header_content">
+                                <h5><span class="currency">$</span><span class="price">250.00</span><span class="day_count">/Night</span></h5>
+                                <img src="./assets/images/listing-user.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body journal_card_container">
+                        <div class="card_header">
+                            <h6>Test</h6>
+                            <img src="./assets/images/card-setting-icon.png" class="card_setting_icon">
+                        </div>
+                        <div class="card_header_setting_actions">
+                            <a href="#">Compare</a>
+                            <a href="#">Add to Favorite</a>
+                        </div>
+                        <p>Hobsonville Point Road, Hobsonville, Upper Harbour, Auckland, 0618, New Zealand</p>
+                        <div style="margin-bottom: 10px;">
+                            <img src="./assets/images/social_bed_icon.png">
+                            <span>3 Bedrooms</span>
+                            <img src="./assets/images/social_bath_icon.png" style="margin-left: 10px;">
+                            <span>1 Baths</span>
+                        </div>
+                        <img src="./assets/images/journal-card-user-icon.png">
+                        <span>6 Campers Cabins, Chalets & Huts</span>
+                        <div class="breadcumb_ratings" style="margin-top: 12px;">
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <span style="margin-top :8px;margin-left: 10px;">Excellent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-40">
+                <div class="card">
+                    <div class="custom_image_grid img_hover_zoom">
+                        <a href="#" class="hover-effect">
+                            <img src="./assets/images/searching-beach-poster.png">
+                        </a>
+                        <div class="card_bottom_header">
+                            <div class="card_bottom_header_content">
+                                <h5><span class="currency">$</span><span class="price">250.00</span><span class="day_count">/Night</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body journal_card_container">
+                        <div class="card_header">
+                            <h6>Tongariro Hut * Coming S...</h6>
+                            <img src="./assets/images/card-setting-icon.png" class="card_setting_icon">
+                        </div>
+                        <div class="card_header_setting_actions">
+                            <a href="#">Compare</a>
+                            <a href="#">Add to Favorite</a>
+                        </div>
+                        <p>Hobsonville Point Road, Hobsonville, Upper Harbour, Auckland, 0618, New Zealand</p>
+                        <div style="margin-bottom: 10px;">
+                            <img src="./assets/images/social_bed_icon.png">
+                            <span>3 Bedrooms</span>
+                            <img src="./assets/images/social_bath_icon.png" style="margin-left: 10px;">
+                            <span>1 Baths</span>
+                        </div>
+                        <img src="./assets/images/journal-card-user-icon.png">
+                        <span>6 Campers Cabins, Chalets & Huts</span>
+                        <div class="breadcumb_ratings" style="margin-top: 12px;">
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <span style="margin-top :8px;margin-left: 10px;">Excellent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-40">
+                <div class="card">
+                    <div class="custom_image_grid img_hover_zoom">
+                        <a href="#" class="hover-effect">
+                            <img src="./assets/images/searching-mount-poster.png">
+                            <p class="card_featured_stripe">Featured</p>
+                        </a>
+                        <div class="card_bottom_header">
+                            <div class="card_bottom_header_content">
+                                <h5><span class="currency">$</span><span class="price">250.00</span><span class="day_count">/Night</span></h5>
+                                <img src="./assets/images/listing-user.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body journal_card_container">
+                        <div class="card_header">
+                            <h6>Coromandel Tree House *Coming S...</h6>
+                            <img src="./assets/images/card-setting-icon.png" class="card_setting_icon">
+                        </div>
+                        <div class="card_header_setting_actions">
+                            <a href="#">Compare</a>
+                            <a href="#">Add to Favorite</a>
+                        </div>
+                        <p>Hobsonville Point Road, Hobsonville, Upper Harbour, Auckland, 0618, New Zealand</p>
+                        <div style="margin-bottom: 10px;">
+                            <img src="./assets/images/social_bed_icon.png">
+                            <span>3 Bedrooms</span>
+                            <img src="./assets/images/social_bath_icon.png" style="margin-left: 10px;">
+                            <span>1 Baths</span>
+                        </div>
+                        <img src="./assets/images/journal-card-user-icon.png">
+                        <span>6 Campers Cabins, Chalets & Huts</span>
+                        <div class="breadcumb_ratings" style="margin-top: 12px;">
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <span style="margin-top :8px;margin-left: 10px;">Excellent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    </div>
+
+
+
+</body>
+<!-- <script src="js/jquery.min.js"></script> -->
+<script src="./assets/bootstrap/js/bootstrap.bundle.js"></script>
+
+</html>
+
+
+<!-- ----------- -->
+<!-- <div class="covid_poster_container">
+    <img src="./assets/images/covid-poster-icon.png" width="88">
+    <h6>Enhanced Cleaning</h6>
+    <p>We request that our Campaway Hosts follow a set of enhanced cleaning procedures between guest stays. Any host who does not follow these guidelines may have their calendars blocked or face other consequences.</p>
+</div>
+<div class="covid_poster_container">
+    <img src="./assets/images/covid-poster-icon.png" width="88">
+    <h6>Enhanced Cleaning</h6>
+    <p>We request that our Campaway Hosts follow a set of enhanced cleaning procedures between guest stays. Any host who does not follow these guidelines may have their calendars blocked or face other consequences.</p>
+</div>
+<div class="covid_poster_container">
+    <img src="./assets/images/covid-poster-icon.png" width="88">
+    <h6>Enhanced Cleaning</h6>
+    <p>We request that our Campaway Hosts follow a set of enhanced cleaning procedures between guest stays. Any host who does not follow these guidelines may have their calendars blocked or face other consequences.</p>
+</div> -->

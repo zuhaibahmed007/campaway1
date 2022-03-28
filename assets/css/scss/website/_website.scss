@@ -1,0 +1,213 @@
+/* FOOTER CSS */
+
+.main_app_footer_container {
+    background-color: #2C615F;
+    padding: 86px 0px 0px 0px;
+}
+
+.main_app_footer_container .footer_top_wrap {
+    padding-bottom: 125px;
+}
+
+.main_app_footer_about_container p {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.main_app_footer_about_container span a {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.main_app_footer_about_container span img {
+    margin-left: -5px;
+}
+
+.main_app_footer_explore_container {
+    padding: 0px 0px 0px 55px;
+}
+
+.main_app_footer_container h3 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 20px 0px 0px 0px;
+    color: #fff;
+}
+
+.main_app_footer_container .main_app_footer_explore_container h3 {
+    margin-bottom: 25px;
+}
+
+.footer_arrow_content_col span,
+.footer_arrow_content_col span a {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 0px 0px 0px 5px;
+    text-decoration: none !important;
+}
+
+.main_app_footer_container .main_app_footer_company_details_container h3 {
+    margin-bottom: 25px;
+}
+
+.main_app_footer_container .main_app_footer_contact_container h3 {
+    margin-bottom: 35px;
+}
+
+.main_app_footer_container .main_app_footer_contact_container p {
+    border-bottom: 1px dashed #FFFFFF;
+    padding-bottom: 12px;
+}
+
+.main_app_footer_contact_container p span {
+    padding-left: 10px;
+}
+
+.footer_bottom {
+    border-top: 3px solid #FFFFFF;
+    padding: 27px 0px 12px 0px;
+}
+
+.footer_bottom p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.footer_bottom .footer_social_container {
+    float: right;
+    margin-top: -15px;
+}
+
+.footer_bottom .footer_social_container i {
+    color: #fff !important;
+    padding: 10px 14px;
+}
+
+.footer_bottom .footer_social_container i:nth-child(2) {
+    margin-right: 0px;
+}
+
+.btn-bg-facebook,
+.btn-bg-instagram {
+    position: relative;
+}
+
+.social_icons i {
+    z-index: 1;
+    position: relative;
+}
+
+.social_icons a {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    display: table-cell;
+}
+
+.btn-bg-facebook:hover:before,
+.btn-bg-facebook:focus:before,
+.btn-bg-facebook:active:before,
+.btn-bg-instagram:hover:before,
+.btn-bg-instagram:focus:before,
+.btn-bg-instagram:active:before {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-bg-facebook:before,
+.btn-bg-instagram:before {
+    -webkit-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+}
+
+.social_round a:before {
+    border-radius: 50%;
+}
+
+.btn-bg-facebook:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #506dab;
+    left: 49%;
+    top: 49%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn-bg-instagram:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #3f729b;
+    left: 49%;
+    top: 49%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+
+    /* FOOTER */
+    .main_app_footer_contact_container {
+        padding-left: 55px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* FOOTER */
+    .main_app_footer_explore_container {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .footer_bottom p {
+        text-align: center;
+    }
+
+    .footer_bottom .footer_social_container {
+        float: unset !important;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social_icons.social_round {
+        margin: 12px 0px 0px 0px !important;
+    }
+
+    .footer_bottom {
+        padding: 27px 0px 12px 0px !important;
+    }
+}

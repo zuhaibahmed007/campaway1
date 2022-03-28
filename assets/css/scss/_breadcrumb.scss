@@ -1,0 +1,65 @@
+.breadcrumb {
+    border-bottom: 1px dashed $borderColor;
+    margin-bottom: 0 !important;
+
+    .container-fluid {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    h2 {
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        padding: 2.5em 0;
+        color: $primary_color;
+        font-weight: 600;
+    }
+    .pl_4 {
+        padding-left:4rem;
+    }
+}
+
+.breadcrumb_links {
+    padding: 2.5em 0;
+    border: 0;
+    border-style: dashed !important;
+    border-color: $borderColor !important;
+
+    h2 {
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        color: $primary_color;
+        font-weight: 600;
+    }
+
+    .links {
+        margin-top: 0.5em;
+
+        a {
+            color: rgb(151, 151, 151);
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
+            font-weight: 600;
+
+            &.active {
+                color: $primary_color !important;
+                cursor: default;
+            }
+        }
+    }
+
+    .links2 {
+        margin-top: 0.5em;
+        display: flex;
+
+        a {
+            color: $primary_color;
+            text-decoration: underline;
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
+            text-underline-position: under;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    color: #4F5962;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    &:hover {
+        @extend a;
+    }
+}
+
+// renter-profile-edit
+a.edit_btn {
+    font-size: 0.78rem;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    margin: 0;
+}
+
+:root {
+    --primaryColor: #2C615F;
+    --green: #8AC544;
+    --light-grey: #F8F8F8;
+    --grey: #D8D8D8;
+    --txtColor: #4F5962;
+    --yellow: #FFCE31;
+    --dark-grey: #A7ACB0;
+    --borderColor: #AAAEB1;
+    --light-purple: #F4C8C7;
+    --dark-purple: #942C3B;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(236, 236, 236);
+}
+
+$primary_color: var(--primaryColor);
+$green: var(--green);
+$light-grey: var(--light-grey);
+$grey: var(--grey);
+$txt_color:var(--txtColor);
+$borderColor:var(--borderColor);
+$light_purple:var(--light-purple);
+$dark_purple:var(--dark-purple);
+$dark_grey:var(--dark-grey);
+$yellow:var(--yellow);
+.bg_green {
+    background-color: $green;
+}
+.txt_green {
+    color: $green;
+}
+.bg_grey {
+    background-color: $primary_color;
+}
+
+.txt_grey {
+    color: $primary_color;
+}
+
+@import 'mixins',
+'breadcrumb',
+'customInputs',
+'others',
+'header',
+'chatbox',
+'globelForm',
+'globalCard',
+'./renter/renterDashboard',
+'./renter/renterTrips',
+'./renter/renterAcc',
+'./renter/renterNotifications',
+'./renter/renterProfile',
+'./renter/renterFavourites',
+'./renter/renterPass',
+'./renter/renterPayment',
+'./renter/bookInstant',
+'./host/hostDashboard',
+'./host/hostWallet',
+'./host/hostPayment',
+'./host/hostListings',
+'./admin/admin',
+'./admin/adminCMS',
+'./website/website';

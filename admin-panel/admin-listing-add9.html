@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Listings | Host Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css?ver=0.1">
+    <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../assets/calender/mini-event-calendar.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="./admin-dashboard.html">
+                    <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
+                </a>
+                <div class="wrapper">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Listing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Journal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notifications">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/icons/bell-icon.png" alt="bell-icon" class="img-fluid">
+                            </div>
+                            <span class="noti_true"></span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="user_dropdown">
+                        <a class="user_info">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/users/Ellipse-35.png" alt="user-image" class="img-fluid">
+                            </div>
+                            <div class="user_info">
+                                <h4>Lea Joe</h4>
+                            </div>
+                        </a>
+                        <div class="user_dropdown_list">
+                            <ul>
+                                <li>
+                                    <a href="./admin-reservations.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/calender.png" alt=""
+                                                class="img-fluid icon_small">
+                                        </div>
+                                        <h4>Reservations</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-listings.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Listings</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-users.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/users.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Users</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/wallet.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Wallet</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-messages.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Messages</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-cms.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/content-manage.png" alt=""
+                                                class="img-fluid">
+                                        </div>
+                                        <h4>Content Management</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-account.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Account</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/logout.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Logout</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="host_listing">
+        <div class="breadcrumb_links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>
+                            Add New Listings
+                        </h2>
+                        <div class="links">
+                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a href="./admin-listings.html">My
+                                Listings</a> &rsaquo; <a class="active">Add New Listings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="listing_timeline">
+            <div class="flex_wrapper">
+                <p class="done">Experience</p><span class="done"></span>
+                <p class="done">Details</p><span class="done"></span>
+                <p class="done">Sites</p><span class="done"></span>
+                <p class="done">Facilities & Services</p><span class="done"></span>
+                <p class="done">Pricing</p><span class="done"></span>
+                <p class="done">Gear</p><span class="done"></span>
+                <p class="done">Terms</p><span class="done"></span>
+                <p class="done">Media</p><span class="done"></span>
+                <p class="done">Calender</p>
+            </div>
+        </div>
+        <section class="add_listings pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="py-5">
+                            <h4 class="sec_hd ps-0">
+                                Sync Calendar
+                            </h4>
+                        </div>
+                        <div class="sync_calender">
+                            <a href="#" class="common_btn text-light bg_green border-0">
+                                Sync Existing Calender
+                            </a>
+                        </div>
+                        <p class="desc">Click on a date to make in unavailable. Then click on it again to make
+                            available</p>
+                        <div id="calender_wrapper">
+                            <div>
+                                <div id="calendar"></div>
+                            </div>
+                        </div>
+                        <div class="bottom_btn_wrapper">
+                            <div class="wrap first_child">
+                                <a href="./admin-listing-add8.html" class="common_btn light_btn">Back</a>
+                                <a href="#" class="common_btn light_btn">Save as Draft</a>
+                            </div>
+                            <div class="wrap last_child">
+                                <a class="common_btn bg_grey text-light pop_up_bottom">Continue</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/calender/mini-event-calendar.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <!-- if you want to use events use #calTFooter class in calender css file to display block event contianer -->
+    <script>
+        var sameDaylastWeek = new Date().setDate(new Date().getDate() - 7);
+        var someDaynextMonth = new Date().setDate(new Date().getDate() + 31);
+
+        // All dates should be provided in timestamps
+        var sampleEvents = [
+            {
+                title: "Soulful sundays bay area",
+                date: sameDaylastWeek, // Same day as today, last week
+                link: "#"
+            },
+            {
+                title: "London Comicon",
+                date: new Date().getTime(), // Today
+                link: "https://www.eventbrite.co.uk/e/london-film-comic-con-summer-2019-tickets-49472593860?aff=ebdssbdestsearch"
+            },
+            {
+                title: "Youth Athletic Camp",
+                date: someDaynextMonth, // Some day as today, next month
+                link: "https://www.eventbrite.com/e/leaner-stronger-faster-tm-youth-athletic-camp-2021-tickets-38245970728?aff=ebdssbdestsearch"
+            }
+        ];
+
+        $(document).ready(function () {
+            $("#calendar").MEC({
+                events: sampleEvents
+            });
+
+            // Make calendar start on monday
+            $("#calendar2").MEC({
+                from_monday: true,
+                events: sampleEvents
+            });
+        });
+        document.querySelector(".pop_up_bottom").addEventListener('click', function () {
+            Swal.fire({
+                toast: true,
+                icon: 'success',
+                title: 'success',
+                animation: false,
+                position: 'bottom',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

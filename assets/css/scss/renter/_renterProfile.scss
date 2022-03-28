@@ -1,0 +1,230 @@
+.profile_sec {
+    padding-top: 3rem;
+    .profile_flex {
+        @include Flex(row, flex-start, flex-start, 5rem, 2rem, unset);
+        width: 100%;
+        column-gap: 5rem;
+        .col_left {
+            border: 1px solid $grey;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 220px;
+            min-width: 200px;
+            .top_sec {
+                padding: 1rem 1rem 1.5rem;
+                border-bottom: 1px solid $grey;
+                a {
+                    width: 100%;
+                    max-width: 150px;
+                }
+                .img_wrapper {
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    label {
+                        font-size: clamp(0.75rem, 2vw, 0.9rem);
+                        font-weight: 700;
+                        text-decoration: underline;
+                        color: $primary_color;
+                    }
+                }
+                .caps {
+                    margin-bottom: 0.8rem;
+                    p {
+                        margin-bottom: 0.5em;
+                        font-size: clamp(0.75rem, 2vw, 0.85rem);
+                        strong {
+                            .fa_cross {
+                                color: red !important;
+                                font-size: clamp(1rem, 1.3vw, 1.5rem);
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom_sec {
+                padding: 1.5rem 1rem 1rem;
+                p {
+                    font-size: clamp(0.75rem, 2vw, 0.85rem);
+                    font-weight: 600;
+                    margin-bottom: 0.8em;
+                }
+            }
+            .icon_wrapper {
+                &.danger_icon {
+                    font {
+                        font-size: 0.7rem;
+                        color: red;
+                        font-weight: 600;
+                    }
+                }
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+                padding: 0.2em 0;
+                img {
+                    display: block;
+                    max-width: 15px;
+                }
+                font {
+                    font-size: clamp(0.8rem, 2vw, 0.9rem);
+                }
+            }
+        }
+        .col_right {
+            width: 100%;
+        }
+        .profile_column {
+            .top_sec {
+                h2 {
+                    font-size: clamp(1rem, 2vw, 1.7rem);
+                    margin-bottom: 0.5em;
+                }
+                .icon_wrapper {
+                    display: flex;
+                    column-gap: 5px;
+                    .fa-star {
+                        color: $primary_color;
+                        font-size: clamp(0.75rem, 2vw, 0.9rem);
+                    }
+                    p {
+                        font-size: clamp(0.75rem, 2vw, 0.85rem);
+                        font-weight: 600;
+                    }
+                }
+            }
+            .bottom_sec {
+                margin-top: 3rem;
+                overflow: hidden;
+                ul#profile-tab {
+                    width: 100%;
+                    column-gap: 45px;
+                    justify-content: center;
+                    .nav-link {
+                        color: $dark-grey;
+                        border-radius: 0;
+                        font-weight: 700;
+                        &.active {
+                            background-color: #fff;
+                            color: $primary_color;
+                            border-bottom: 3px solid $primary_color;
+                        }
+                    }
+                }
+                .tab-content#profile-tabContent {
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                    .flex_wrapper {
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
+                        row-gap: 25px;
+                        padding-left: 1rem;
+                    }
+                }
+                .reviews_wrapper {
+                    width: 100%;
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}
+
+.alert_msg {
+    background-color: $light_purple;
+    border: 1px solid $dark_purple;
+    border-radius: 4px;
+    p {
+        color: $dark_purple;
+        font-size: clamp(0.75rem, 2vw, 0.9rem);
+        padding: 1em 0.5em;
+        font-weight: 600;
+    }
+}
+
+.reviews_wrapper {
+    display: flex;
+    column-gap: 10px;
+    >.img_wrapper {
+        min-width: 50px;
+        text-align: center;
+        img {
+            max-width: 45px;
+        }
+    }
+    .review_header {
+        display: flex;
+        flex-direction: column;
+        .top_wrapper {
+            display: flex;
+            column-gap: 15px;
+            align-items: center;
+            h5 {
+                font-size: clamp(0.75rem, 2vw, 0.85rem);
+                font-weight: 600;
+            }
+            .fa-star {
+                font-size: 0.7rem;
+            }
+            .badge {
+                font-size: 0.55rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+        .bottom_wrapper {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+            .wrap_icon {
+                img {
+                    max-width: 13px;
+                }
+                font {
+                    font-size: 0.68rem;
+                }
+            }
+        }
+    }
+    .review_body {
+        p {
+            font-size: clamp(0.75rem, 2vw, 0.85rem);
+            padding-top: 0.5em;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .profile_sec .container {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .profile_sec .profile_flex {
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width:840px) {
+    .profile_sec .profile_flex {
+        flex-direction: column;
+    }
+    .profile_sec .profile_flex .col_left {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:390px) {
+    .profile_sec .profile_flex {
+        flex-direction: column;
+    }
+    .profile_sec .profile_flex .col_left {
+        margin: 0 auto;
+    }
+    .reviews_wrapper .review_header .top_wrapper {
+        flex-wrap: wrap;
+    }
+    .reviews_wrapper .review_header .top_wrapper h5 {
+        width: 100%;
+    }
+}
