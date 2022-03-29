@@ -2,6 +2,7 @@
         background-color: $primary_color;
         z-index: 999;
         .navbar-brand {
+            padding-left: 1em;
             img {
                 max-width: 150px;
             }

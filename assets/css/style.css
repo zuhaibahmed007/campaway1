@@ -733,6 +733,10 @@ header {
   z-index: 999;
 }
 
+header .navbar-brand {
+  padding-left: 1em;
+}
+
 header .navbar-brand img {
   max-width: 150px;
 }
