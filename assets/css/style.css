@@ -2436,6 +2436,11 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
           text-decoration-color: var(--primaryColor);
 }
 
+.trips_table table td a.a_style_none {
+  border: 0 !important;
+  padding: unset !important;
+}
+
 .trips_details .flex_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

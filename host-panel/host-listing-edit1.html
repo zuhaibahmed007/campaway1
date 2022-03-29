@@ -192,7 +192,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="edit_listing_tabs">
+                        <div class="edit_listing_tabs" id="hostlistingTab">
                             <ul class="nav nav-pills" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="Experience-tab" data-bs-toggle="pill"
@@ -358,8 +358,9 @@
                                                     <div class="bottom_btn_wrapper">
                                                         <div class="wrap first_child">
                                                         </div>
-                                                        <div class="wrap last_child">
-                                                            <a href="#" class="common_btn bg_grey text-light">Continue</a>
+                                                        <div class="wrap last_child" role="presentation">
+                                                            <a href="#" onclick="changeTab(this)" data-id="0"
+                                                                class="common_btn bg_grey text-light">Continue</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -463,7 +464,7 @@
                                                         <div class="wrap first_child">
                                                         </div>
                                                         <div class="wrap last_child">
-                                                            <a href="#"
+                                                            <a href="#" onclick="changeTab(this)" data-id="1"
                                                                 class="common_btn bg_grey text-light">Continue</a>
                                                         </div>
                                                     </div>
@@ -541,7 +542,7 @@
                                                         <div class="wrap first_child">
                                                         </div>
                                                         <div class="wrap last_child">
-                                                            <a href="#"
+                                                            <a href="#" onclick="changeTab(this)" data-id="2"
                                                                 class="common_btn bg_grey text-light">Continue</a>
                                                         </div>
                                                     </div>
@@ -787,8 +788,9 @@
                                                         <div class="wrap first_child">
                                                         </div>
                                                         <div class="wrap last_child">
-                                                            <a href="#"
+                                                            <a href="#" onclick="changeTab(this)" data-id="3"
                                                                 class="common_btn bg_grey text-light">Continue</a>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -920,7 +922,7 @@
                                                         <div class="wrap first_child">
                                                         </div>
                                                         <div class="wrap last_child">
-                                                            <a href="#"
+                                                            <a href="#" onclick="changeTab(this)" data-id="4"
                                                                 class="common_btn bg_grey text-light">Continue</a>
                                                         </div>
                                                     </div>
@@ -1130,7 +1132,7 @@
                                                         <div class="wrap first_child">
                                                         </div>
                                                         <div class="wrap last_child">
-                                                            <a href="#"
+                                                            <a href="#" onclick="changeTab(this)" data-id="5"
                                                                 class="common_btn bg_grey text-light">Continue</a>
                                                         </div>
                                                     </div>
@@ -1320,7 +1322,7 @@
                                                         <div class="wrap first_child">
                                                         </div>
                                                         <div class="wrap last_child">
-                                                            <a href="#"
+                                                            <a href="#" onclick="changeTab(this)" data-id="6"
                                                                 class="common_btn bg_grey text-light">Continue</a>
                                                         </div>
                                                     </div>
@@ -1406,15 +1408,14 @@
                                                     <div class="bottom_btn_wrapper">
                                                         <div class="wrap first_child">
                                                         </div>
-                                                        <div class="wrap last_child">
-                                                            <a href="#"
-                                                                class="common_btn bg_grey text-light">Continue</a>
-                                                        </div>
+                                                           <div class="wrap last_child">
+                                                            <a href="#" onclick="changeTab(this)" data-id="7"
+                                                            class="common_btn bg_grey text-light">Continue</a>
+                                                           </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </section>
                                 </div>
                                 <div class="tab-pane fade" id="Calender" role="tabpanel" aria-labelledby="Calender-tab">
                                     <section class="add_listings py-5">
@@ -1454,6 +1455,38 @@
                 </div>
             </div>
         </section>
+        </div>
+        <div class="tab-pane fade" id="Calender" role="tabpanel" aria-labelledby="Calender-tab">
+            <section class="add_listings py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="sync_calender">
+                                <a href="#" class="common_btn text-light bg_green border-0">
+                                    Sync Existing Calender
+                                </a>
+                            </div>
+                            <p class="desc">Click on a date to make in unavailable. Then click
+                                on it again to make
+                                available
+                            </p>
+                            <div id="calender_wrapper">
+                                <div>
+                                    <div id="calendar"></div>
+                                </div>
+                            </div>
+                            <div class="bottom_btn_wrapper">
+                                <div class="wrap first_child">
+                                </div>
+                                <div class="wrap last_child">
+                                    <a href="#" class="common_btn bg_grey text-light">Continue</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

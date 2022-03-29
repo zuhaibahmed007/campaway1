@@ -87,6 +87,10 @@
                     text-decoration: underline;
                     text-decoration-color: $primary_color;
                 }
+                &.a_style_none {
+                    border: 0 !important;
+                    padding:unset !important;
+                }
             }
         }
     }
